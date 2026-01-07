@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Wallet, Shield, TrendingUp, BarChart3, Users, Globe, ArrowRight, PieChart, Target, Layers, Award, CheckCircle, DollarSign, Building, Compass, LineChart, Briefcase, Lock, Star, Eye, TrendingDown, Activity } from 'lucide-react';
+import { Wallet, Shield, TrendingUp, BarChart3, Users, Globe, PieChart, Target, Layers, Award, CheckCircle, DollarSign, Building, Compass, LineChart, Briefcase, Lock, Star, Eye, Activity } from 'lucide-react';
 
 const IoMarketsFund: React.FC = () => {
   return (
