@@ -3,36 +3,38 @@ import { Helmet } from 'react-helmet';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Wallet, Shield, TrendingUp, BarChart3, Users, Globe, PieChart, Target, Layers, Award, CheckCircle, DollarSign, Building, Compass, LineChart, Briefcase, Lock, Star, Eye, Activity } from 'lucide-react';
 
-// Floating Elements Component - Wealth Theme
+// Floating Elements Component - Wealth Theme VIBRANT
 const FloatingElements: React.FC = () => (
   <div className="absolute inset-0 overflow-hidden pointer-events-none">
     {/* Large gold circle - top left */}
     <div
-      className="absolute -top-20 -left-20 w-80 h-80 rounded-full border border-yellow-500/10 float-elegant"
+      className="absolute -top-20 -left-20 w-80 h-80 rounded-full border-2 border-yellow-500/40 float-elegant"
       style={{ animationDelay: '0s' }}
     />
 
     {/* Medium amber circle - top right */}
     <div
-      className="absolute top-40 -right-10 w-60 h-60 rounded-full border border-amber-500/15 float-medium"
+      className="absolute top-40 -right-10 w-60 h-60 rounded-full border-2 border-amber-500/45 float-medium"
       style={{ animationDelay: '2s' }}
     />
 
     {/* Small bronze circle - middle left */}
     <div
-      className="absolute top-1/2 left-10 w-40 h-40 rounded-full border border-orange-500/10 float-fast"
+      className="absolute top-1/2 left-10 w-40 h-40 rounded-full border-2 border-orange-500/40 float-fast"
       style={{ animationDelay: '1s' }}
     />
 
     {/* Rotating ring - center right */}
     <div
-      className="absolute top-1/3 right-1/4 w-72 h-72 rounded-full border border-yellow-400/5 rotate-slow"
+      className="absolute top-1/3 right-1/4 w-72 h-72 rounded-full border border-yellow-400/25 rotate-slow"
     />
 
-    {/* Small floating dots */}
-    <div className="absolute top-1/4 left-1/4 w-2 h-2 rounded-full bg-yellow-400/30 float-fast" style={{ animationDelay: '0.5s' }} />
-    <div className="absolute top-2/3 right-1/3 w-3 h-3 rounded-full bg-amber-400/20 float-elegant" style={{ animationDelay: '1.5s' }} />
-    <div className="absolute bottom-1/4 left-1/3 w-2 h-2 rounded-full bg-orange-400/25 float-medium" style={{ animationDelay: '2.5s' }} />
+    {/* Small floating dots - VIBRANT */}
+    <div className="absolute top-1/4 left-1/4 w-3 h-3 rounded-full bg-yellow-400/60 float-fast" style={{ animationDelay: '0.5s' }} />
+    <div className="absolute top-2/3 right-1/3 w-4 h-4 rounded-full bg-amber-400/50 float-elegant" style={{ animationDelay: '1.5s' }} />
+    <div className="absolute bottom-1/4 left-1/3 w-3 h-3 rounded-full bg-orange-400/55 float-medium" style={{ animationDelay: '2.5s' }} />
+    <div className="absolute top-[35%] left-[8%] w-2 h-2 rounded-full bg-yellow-300/50 float-elegant" style={{ animationDelay: '0.8s' }} />
+    <div className="absolute bottom-[40%] right-[10%] w-3 h-3 rounded-full bg-amber-300/55 float-fast" style={{ animationDelay: '1.8s' }} />
   </div>
 );
 
@@ -122,11 +124,12 @@ const IoMarketsFund: React.FC = () => {
         <div className="absolute inset-0 elegant-grid" />
         <div className="absolute inset-0 diamond-pattern" />
 
-        {/* Multi-color Orbs - Wealth Gold/Amber Theme */}
-        <div className="absolute top-0 left-[15%] w-[600px] h-[600px] bg-[#DAA520] orb-hero" />
-        <div className="absolute top-[20%] right-[10%] w-[500px] h-[500px] bg-[#F59E0B] orb-hero" style={{ animationDelay: '1s' }} />
-        <div className="absolute bottom-[10%] left-[5%] w-[450px] h-[450px] bg-[#CD7F32] orb-hero" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-[40%] right-[25%] w-[350px] h-[350px] bg-[#B8860B] orb-hero" style={{ animationDelay: '3s' }} />
+        {/* Multi-color Orbs - Vibrant Gold/Amber Theme */}
+        <div className="absolute top-0 left-[15%] w-[600px] h-[600px] bg-[#FFD700] orb-hero" />
+        <div className="absolute top-[20%] right-[10%] w-[500px] h-[500px] bg-[#FBBF24] orb-hero" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-[10%] left-[5%] w-[450px] h-[450px] bg-[#F59E0B] orb-hero" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-[40%] right-[25%] w-[350px] h-[350px] bg-[#FCD34D] orb-hero" style={{ animationDelay: '3s' }} />
+        <div className="absolute bottom-[30%] right-[5%] w-[400px] h-[400px] bg-[#EAB308] orb-hero" style={{ animationDelay: '4s' }} />
 
         {/* Floating Elements */}
         <FloatingElements />
@@ -161,13 +164,13 @@ const IoMarketsFund: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight"
               >
-                <span className="text-white">Institutional-Grade</span>
+                <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">Institutional-Grade</span>
                 <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-400 to-orange-400 drop-shadow-[0_0_40px_rgba(251,191,36,0.6)]">
                   Global Investment
                 </span>
                 <br />
-                <span className="text-white">Opportunities</span>
+                <span className="text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">Opportunities</span>
               </motion.h1>
 
               {/* Animated Tagline */}
@@ -194,13 +197,13 @@ const IoMarketsFund: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="flex flex-col sm:flex-row gap-4 justify-center pt-4"
               >
-                <button className="group relative bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-500 hover:to-amber-500 text-white px-10 py-4 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20 overflow-hidden">
+                <button className="group relative bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500 hover:from-yellow-400 hover:via-amber-400 hover:to-orange-400 text-white px-10 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-amber-500/40 hover:shadow-yellow-500/50 hover:scale-105 overflow-hidden">
                   <span className="relative z-10 flex items-center gap-2">
                     <Wallet className="w-5 h-5" />
                     Schedule Consultation
                   </span>
                 </button>
-                <button className="glass hover:bg-white/10 text-white px-10 py-4 rounded-xl font-semibold transition-all flex items-center justify-center gap-2">
+                <button className="glass-gold hover:bg-amber-500/20 text-white px-10 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 border border-yellow-500/40 hover:border-amber-400/60 hover:scale-105">
                   <Eye className="w-5 h-5" />
                   Download Fund Materials
                 </button>
@@ -663,11 +666,11 @@ const IoMarketsFund: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <button className="bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-500 hover:to-amber-500 text-white px-10 py-4 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 shadow-lg shadow-yellow-500/20">
+              <button className="bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500 hover:from-yellow-400 hover:via-amber-400 hover:to-orange-400 text-white px-10 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-amber-500/40 hover:shadow-yellow-500/50 hover:scale-105">
                 <Wallet className="w-5 h-5" />
                 Request Information
               </button>
-              <button className="bg-white text-gray-900 hover:bg-gray-100 px-10 py-4 rounded-xl font-semibold transition-all flex items-center justify-center gap-2">
+              <button className="bg-gradient-to-r from-white to-amber-50 text-gray-900 hover:from-amber-50 hover:to-yellow-100 px-10 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:scale-105">
                 <Users className="w-5 h-5" />
                 Schedule Meeting
               </button>
